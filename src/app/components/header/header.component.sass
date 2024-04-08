@@ -1,0 +1,39 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width:100%
+    padding: 2rem 9%
+    background: rgba(0, 0, 0, 0.4)
+    backdrop-filter: blur(10px)
+    display: flex
+    justify-content: space-between
+    align-items: center                                                                 
+    z-index: 100
+
+.logo
+    font-size: 2.8rem
+    color: var(--text-color)
+    font-weight: 900
+    cursor: pointer
+    transition: 0.3s ease-in-out
+
+.logo:hover
+    transform: scale(1.1)
+
+.navbar a
+    font-size: 1.6rem
+    color: var(--text-color)
+    margin-left: 4rem
+    font-weight: 500
+    transition: 0.3s ease-in-out
+    border-bottom: 3px solid transparent
+
+.navbar a:hover
+    color: var(--main-color)
+    border-bottom: 3px solid var(--main-color)
+
+#menu-icon
+    font-size: 3.6rem
+    color: var(--main-color)
+    display: none
