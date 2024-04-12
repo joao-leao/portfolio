@@ -1,1 +1,13 @@
-<p>skills works!</p>
+<section class="section-skills">
+    <div class="conteiner-title">
+        <h3>Skills</h3>
+    </div>
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills">
+            <h5>{{ skill.name}}</h5>
+            <img [src]="skill.img" alt="logo Javascript">
+            <progress [class]="skill.color" [value]="skill.score" max="100"></progress>
+        </div>
+
+    </div>
+</section>

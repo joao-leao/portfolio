@@ -1,0 +1,70 @@
+.section-skills
+    background-color: var(--second-bg-color)
+
+.conteiner-title
+    width: 100%
+    display: flex
+    justify-content: center
+
+.conteiner-title h3
+    font-size: 5rem
+    margin: 4rem 0
+    text-shadow: 0 0 100px var(--roxo-claro)
+    
+.skills
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    row-gap: 30px
+    column-gap: 60px
+    margin: 0 100px
+    
+.skill
+    width: 250px
+    height:  200px
+    display: flex
+    flex-direction: column
+    gap: 8px
+    justify-content: center
+    align-items: center
+
+.skill h5
+    font-size: 1.4rem
+    text-shadow: 0 0 3px black
+    margin: 0
+    
+.skill img
+    width: 4rem
+    object-fit: cover
+    margin: 10px
+    filter: drop-shadow(0 0 30px var(--roxo-claro))
+
+.skill progress
+    height: 10px
+    width: 145px
+    border-radius: 10px
+
+.skill progress::-webkit-progress-bar
+    background: var(--main-color)
+    border-radius: 10px
+    
+.skill progress::-webkit-progress-value
+    border-radius: 10px
+
+.skill progress
+    &.orange::-webkit-progress-value
+        background: var(--orange)
+    &.orange-2::-webkit-progress-value
+        background: var(--orange-2)
+    &.blue::-webkit-progress-value
+        background: var(--blue)
+    &.red::-webkit-progress-value
+        background: var(--red)
+    &.yelow::-webkit-progress-value
+        background: var(--yelow)
+    &.black::-webkit-progress-value
+        background: var(--black)
+    &.light-blue::-webkit-progress-value
+        background: var(--light-blue)
+    
+    
