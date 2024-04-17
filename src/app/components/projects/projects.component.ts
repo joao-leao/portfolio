@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IProjects } from 'src/app/projects';
+import { ProjectsService } from 'src/app/projects.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.sass']
 })
 export class ProjectsComponent implements OnInit {
+  projects: IProjects[] | undefined;
 
-  constructor() { }
+  constructor(
+    private projectsSevice: ProjectsService
+  ) { }
 
   ngOnInit(): void {
+    this.projects = this.projectsSevice.getAll();
   }
 
 }

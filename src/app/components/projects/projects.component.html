@@ -1,1 +1,19 @@
-<p>projects works!</p>
+<section class="section-projects">
+    <h3>Projetos</h3>
+    <div class="projects">
+        <div class="project" *ngFor="let project of projects">
+            <div class="project-img">
+                <img [src]="project.img" [alt]="project.descImg">
+            </div>
+            <div class="project-description">
+                <h4>{{ project.name }}</h4>
+                <p>{{ project.desc }}</p>
+                <ul>
+                    <li *ngFor="let tech of project.technologies">{{ tech }}</li>
+                </ul>
+                <a [href]="project.urlLive" target="_blank"><Button>Visualizar</Button></a>
+                <a [href]="project.urlGitHub" target="_blank"><Button>Repositório</Button></a>
+            </div>
+        </div>
+    </div>
+</section>
