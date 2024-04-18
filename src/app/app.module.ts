@@ -9,6 +9,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 
+// import { ClipboardModule } from '@angular/cdk/clipboard';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,8 @@ import { HomeComponent } from './components/home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    // ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
