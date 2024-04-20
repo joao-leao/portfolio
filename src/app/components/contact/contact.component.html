@@ -7,15 +7,17 @@
                 <li class="li email">
                     <i class='bx bx-envelope bx-flashing' ></i>
                     flocoswhite@gmail.com
-                    <button class="copy">
-                        <i class='bx bx-copy'></i>
+                    <button class="copy" (click)="copiarEmail()" title="Copiar email para a área de transferência">
+                        <i class='bx bx-copy' *ngIf="copy1"></i>
+                        <i class='bx bx-check' *ngIf="check1"></i>
                     </button>
                 </li>
                 <li class="li tell">
                     <i class='bx bx-mobile-alt bx-tada' ></i>
                     (62) 993305993
-                    <button class="copy">
-                        <i class='bx bx-copy'></i>
+                    <button class="copy" (click)="copiarNumero()" title="Copiar número para a área de transferência">
+                        <i class='bx bx-copy' *ngIf="copy2"></i>
+                        <i class='bx bx-check' *ngIf="check2"></i>
                     </button>
                 </li>
             </ul>
