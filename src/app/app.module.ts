@@ -8,6 +8,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 // import { ClipboardModule } from '@angular/cdk/clipboard';
 
@@ -19,7 +20,8 @@ import { HomeComponent } from './components/home/home.component';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
