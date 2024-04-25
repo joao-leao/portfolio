@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  activeSection: string | undefined;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  onSectionChange(sectionId: string) {
+    this.activeSection = sectionId;
   }
-
+    
+  
 }

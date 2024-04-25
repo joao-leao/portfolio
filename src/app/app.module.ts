@@ -9,8 +9,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ScrollDirective } from './scroll.directive';
 
-// import { ClipboardModule } from '@angular/cdk/clipboard';
 
 @NgModule({
   declarations: [
@@ -21,11 +21,11 @@ import { FooterComponent } from './components/footer/footer.component';
     ProjectsComponent,
     ContactComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollDirective,
   ],
   imports: [
     BrowserModule,
-    // ClipboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

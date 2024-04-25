@@ -4,10 +4,10 @@
     <i class='bx bx-menu' id="menu-icon"></i>
     
 
-    <nav class="navbar">
-        <a href="#about" >Sobre</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projetos</a>
-        <a href="#contact">Contato</a>
+    <nav class="navbar" appScroll (sectionChange)="onSectionChange($event)">
+        <a href="#about" [class.active]="activeSection === 'about'" >Sobre</a>
+        <a href="#skills" [class.active]="activeSection === 'skills'" >Skills</a>
+        <a href="#projects" [class.active]="activeSection === 'projects'" >Projetos</a>
+        <a href="#contact" [class.active]="activeSection === 'contact'">Contato</a>
     </nav>
 </header>
