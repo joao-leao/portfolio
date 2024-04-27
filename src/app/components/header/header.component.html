@@ -1,10 +1,13 @@
-<header class="header">
+<header class="header" >
     <a href="#home" class="logo">João<span>Leão</span> </a>
 
-    <i class='bx bx-menu' id="menu-icon"></i>
+    <button id="menu-icon" class="hamburger" (click)="HiddenNav()" [ngClass]="{'showBt': buttonAnimation}" >
+        <!-- <i class='bx bx-menu'></i> -->
+    </button>
+    
     
 
-    <nav class="navbar" appScroll (sectionChange)="onSectionChange($event)">
+    <nav class="navbar" appScroll (sectionChange)="onSectionChange($event)" [ngClass]="{'show': isNavbarVisible}" >
         <a href="#about" [class.active]="activeSection === 'about'" >Sobre</a>
         <a href="#skills" [class.active]="activeSection === 'skills'" >Skills</a>
         <a href="#projects" [class.active]="activeSection === 'projects'" >Projetos</a>

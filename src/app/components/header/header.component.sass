@@ -47,7 +47,70 @@
     width: 100%
     background: var(--main-color)
 
-#menu-icon
-    font-size: 3.6rem
-    color: var(--main-color)
+.hamburger
     display: none
+    position: fixed
+    top: 5vh
+    right: 20vw
+    border: none
+    padding: 0
+    background: none
+    border-top: 3px solid #fff
+    cursor: pointer
+
+.hamburger::before, .hamburger::after
+    content: ""
+    display: block
+    width: 30px
+    height: 3px
+    background: #fff
+    margin-top: 5px
+    position: relative
+    transition: .3s
+
+@media (0px <= width <= 884px)
+    .logo
+        font-size: 2.4rem
+
+    .navbar a
+        font-size: 1.34rem
+
+@media (0px <= width <= 768px)
+    .hamburger
+        display: block
+    
+    .navbar
+        position: absolute
+        top: 100%
+        right: 0
+        width: 50%
+        padding: .2rem 6%
+        text-align: center
+        border-bottom-left-radius: 2rem
+        border-left: 2px solid var(--main-color)
+        border-bottom: 2px solid var(--main-color)
+        background: rgba(0, 0, 0, 0.4)
+        backdrop-filter: blur(20px)
+        pointer-events: none
+        transition: transform .3s ease
+        transform: translateX(100%)
+
+    .show
+        pointer-events: all
+        transform: translateZ(0)
+        
+    .showBt
+        border-top-color: transparent
+
+    .showBt::before
+        transform: rotate(135deg)
+
+    .showBt::after
+        transform: rotate(-135deg)
+        top: -7px
+
+    .navbar a
+        display: block
+        font-size: 2rem
+        margin: 2.8rem 0
+        
