@@ -11,8 +11,8 @@
                 <ul>
                     <li *ngFor="let tech of project.technologies">{{ tech }}</li>
                 </ul>
-                <a [href]="project.urlLive" target="_blank"><Button>Visualizar</Button></a>
-                <a [href]="project.urlGitHub" target="_blank"><Button>Repositório</Button></a>
+                <a [href]="project.urlLive" target="_blank" rel="noopener noreferrer"><Button>Visualizar</Button></a>
+                <a [href]="project.urlGitHub" target="_blank" rel="noopener noreferrer"><Button>Repositório</Button></a>
             </div>
         </div>
     </div>
