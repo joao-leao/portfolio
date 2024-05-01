@@ -1,17 +1,19 @@
-.about 
-    column-gap: 12rem
-    padding: 12rem
-    display: flex
-    justify-content: center
+#about
     background-color: var(--second-bg-color)
 
+.about 
+    column-gap: 6rem
+    padding: 12rem 0
+    margin: 0 6rem
+    display: flex
+    justify-content: space-around
+    align-items: center
+    
 .about__photo img
-    position: relative
-    width: 28vw
-    margin-right: 3rem
+    width: 500px
+    // margin-right: 3rem
     border-radius: 50%
     box-shadow: 0 0 25px var(--main-color)
-    top: 1rem
     cursor: pointer
     transition: 0.4s ease-in-out
 
@@ -20,15 +22,76 @@
 
 
 .about__text h3
+    width: 80%
     font-size: 3rem
+    margin: 0 0 2rem 0
+
 
 .about__text h3 span
     color: var(--main-color)
     text-shadow: 0 0 50px var(--main-color)
 
 .about__text p
-    width: 500px
+    max-width: 600px
     font-size: 1.4rem
     
     text-align: start
     color: #ffffffd5
+
+@media (0px <= width <= 1220px)
+    .about
+        padding: 12rem 0
+        justify-content: space-evenly
+        margin: 0 2rem
+        column-gap: 4rem
+        
+    .about__photo img
+        width: 420px
+
+    .about__text
+        max-width: 500px
+
+    .about__text h3
+        font-size: 2.7rem
+
+    .about__text p
+        font-size: 1.2rem
+    
+
+@media (0px <= width < 1024px)
+    .about
+        flex-direction: column
+        row-gap: 2rem
+
+    .about__photo img
+        width: 380px
+
+@media (0px <= width <= 590px)
+    .about
+        row-gap: 1rem
+        margin: 0 3rem
+
+    .about__text h3
+        font-size: 2.4rem
+        margin-bottom: 1rem
+
+    .about__text p
+        font-size: 1rem
+
+    .about__photo img
+        width: 300px
+
+@media (0px <= width <= 430px)
+    .about
+        margin: 0 2.6rem
+        
+    .about__text h3
+        font-size: 2rem
+
+    .about__text p
+        font-size: 14px
+
+    .about__photo img
+        width: 240px
+
+    

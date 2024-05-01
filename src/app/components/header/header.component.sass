@@ -21,6 +21,9 @@
 .logo:hover
     transform: scale(1.1)
 
+.logo span
+    color: var(--main-color)
+
 .navbar a
     position: relative
     font-size: 1.6rem
@@ -47,18 +50,18 @@
     width: 100%
     background: var(--main-color)
 
-.hamburger
+.hamburguer
     display: none
     position: fixed
     top: 5vh
-    right: 20vw
+    right: 12vw
     border: none
     padding: 0
     background: none
     border-top: 3px solid #fff
     cursor: pointer
 
-.hamburger::before, .hamburger::after
+.hamburguer::before, .hamburguer::after
     content: ""
     display: block
     width: 30px
@@ -68,15 +71,15 @@
     position: relative
     transition: .3s
 
-@media (0px <= width <= 884px)
+// @media (0px <= width <= 936px)
     .logo
         font-size: 2.4rem
 
     .navbar a
         font-size: 1.34rem
 
-@media (0px <= width <= 768px)
-    .hamburger
+@media (0px <= width < 1024px)
+    .hamburguer
         display: block
     
     .navbar
@@ -113,4 +116,16 @@
         display: block
         font-size: 2rem
         margin: 2.8rem 0
-        
+
+
+@media (0px <= width <= 430px)
+    .logo
+        font-size: 1.8rem
+
+    .hamburguer 
+        top: 4vh
+        right: 10vw
+
+    .navbar a
+        font-size: 1.34rem
+        margin: 2rem 0

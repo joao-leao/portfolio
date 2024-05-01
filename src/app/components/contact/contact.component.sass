@@ -20,7 +20,8 @@
 .container
     display: flex
     justify-content: center
-    column-gap: 5rem
+    align-items: center
+    column-gap: 10rem
 
 .div-left
     display: flex
@@ -105,4 +106,64 @@
     box-shadow: 0 0 25px var(--main-color)
 
 .div-right img
-    width: 500px
+    margin: 4rem 0 
+    width: 320px
+
+
+@media (0 <= width < 1024px)
+    .container
+        justify-content: space-around
+        column-gap: 0
+
+@media (0px <= width < 768px)
+    .container
+        justify-content: center
+        flex-direction: column-reverse
+        column-gap: 0
+        
+    .div-right img
+        margin: 1rem 0
+
+@media (0px <= width <= 590px)
+    .contact p
+        font-size: 2.2rem
+
+    .div-right img
+        width: 260px
+
+@media (0px <= width <= 430px)
+    .contact h3
+        font-size: 3.2rem
+
+    .contact p
+        width: 80%
+        font-size: 1.6rem
+
+    .div-right img
+        width: 200px
+
+    .div-left ul li
+        font-size: 1.2rem
+
+    .bx-mobile-alt, .bx-envelope
+        font-size: 28px
+
+    .copy
+        width: 38px
+        height: 38px
+
+    .copy .bx-copy
+        font-size: 26px
+
+    .copy .bx-check
+        font-size: 26px
+
+    .btn-whats
+        height: 50px
+        width: 180px
+        
+        font-size: 16px
+
+    .btn-whats .bxl-whatsapp
+        margin-right: 10px
+        font-size: 20px

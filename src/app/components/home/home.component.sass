@@ -1,9 +1,10 @@
 .content
     display: flex
-    justify-content: center
+    justify-content: space-around
     align-items: center
-    padding: 12rem 0 14rem 0
-    gap: 18rem
+    padding: 14rem 0 14rem 0
+    margin: 0 6rem
+    column-gap: 2rem
     background: var(--bg-color)
     color: var(--text-color)
 
@@ -74,16 +75,73 @@
     border-radius: 50%
 
 .content-right img
-    position: relative
-    width: 28vw
+    width: 500px
     margin: 0
     border-radius: 50%
     box-shadow: 0 0 25px var(--main-color)
-    top: 1rem
     cursor: pointer
     transition: 0.4s ease-in-out
 
 .content-right img:hover
     box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color)
+
+
+@media (0 <= width <= 1220px)
+    .content-right img
+        width: 420px
     
+    .content-left h1
+        font-size: 4rem
+
+    .content
+        margin: 0 4rem
+        
+            
+@media (0px <= width < 1024px)
+    .content
+        flex-direction: column-reverse
+        row-gap: 3rem
+        padding-top: 8rem
+
+    .content-right img
+        width: 380px
+
+@media (0px <= width <= 590px)
+    .content-left code
+        font-size: 1rem
+
+    .content-left h1
+        font-size: 2.8rem
+
+    .content-left h2
+        font-size: 1.8rem
+
+    .social-icons a
+        width: 4rem
+        height: 4rem
+        font-size: 2.8rem
+        
+    .content-right img
+        width: 300px
+
+@media (0px <= width <= 430px)
+    .content-left h1
+        font-size: 2.2rem
+
+    .content-left h2
+        font-size: 1.4rem
+        margin-bottom: 8px
+
+    .social-icons a
+        width: 3rem
+        height: 3rem
+        font-size: 2rem
+        margin-right: .6rem
+        
+    .content-right img
+        width: 240px
+        
     
+
+
+
