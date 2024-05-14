@@ -1,16 +1,16 @@
 <header class="header" >
-    <a href="#home" class="logo"><span>&lt;</span>Portfolio<span>&gt;</span></a>
+    <a href="#home" class="logo" title="Logo Portfolio"><span>&lt;</span>Portfolio<span>&gt;</span></a>
 
-    <button id="menu-icon" class="hamburguer" (click)="HiddenNav()" [ngClass]="{'showBt': buttonAnimation}" >
+    <button id="menu-icon" class="hamburguer" (click)="HiddenNav()" [ngClass]="{'showBt': buttonAnimation}" aria-label="clique aqui para abrir a barra de navegação" role="button">
         <!-- <i class='bx bx-menu'></i> -->
     </button>
     
     
 
     <nav class="navbar" appScroll (sectionChange)="onSectionChange($event)" [ngClass]="{'show': isNavbarVisible}" >
-        <a href="#about" [class.active]="activeSection === 'about'" >Sobre</a>
-        <a href="#skills" [class.active]="activeSection === 'skills'" >Skills</a>
-        <a href="#projects" [class.active]="activeSection === 'projects'" >Projetos</a>
-        <a href="#contact" [class.active]="activeSection === 'contact'">Contato</a>
+        <a href="#about" [class.active]="activeSection === 'about'" title="Sobre mim" >Sobre</a>
+        <a href="#skills" [class.active]="activeSection === 'skills'" title="Skills">Skills</a>
+        <a href="#projects" [class.active]="activeSection === 'projects'" title="Projetos">Projetos</a>
+        <a href="#contact" [class.active]="activeSection === 'contact'" title="Contato">Contato</a>
     </nav>
 </header>
