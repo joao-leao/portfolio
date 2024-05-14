@@ -11,6 +11,6 @@ export const skills: ISkills[] = [
     {name: "JAVASCRIPT", img: "./assets/imgs/logo-javascript.svg", score: "60", color: "yelow"},
     {name: "ANGULAR", img: "./assets/imgs/angular-icon-1.svg", score: "50", color: "red"},
     {name: "GIT", img: "./assets/imgs/git-icon.svg", score: "32", color: "orange-2" },
-    {name: "GITHUB", img: "./assets/imgs/github5.png", score: "30", color: "black"},
-    {name: "JAVA", img: "./assets/imgs/java2.png", score: "30", color: "light-blue"}
+    {name: "GITHUB", img: "./assets/imgs/github5.svg", score: "30", color: "black"},
+    {name: "JAVA", img: "./assets/imgs/java2.svg", score: "30", color: "light-blue"}
 ]

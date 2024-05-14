@@ -72,18 +72,28 @@
 
 
 .content-right
+    overflow: hidden
     border-radius: 50%
+    background: var(--main-color)
+    box-shadow: 0 0 25px var(--roxo-claro)
+    transition: 0.4s ease-in-out
+    cursor: pointer
 
 .content-right img
+    position: relative
     width: 500px
+    top: -20px
     margin: 0
-    border-radius: 50%
-    box-shadow: 0 0 25px var(--main-color)
-    cursor: pointer
-    transition: 0.4s ease-in-out
+    animation: float 2s ease-in-out infinite alternate
 
-.content-right img:hover
-    box-shadow: 0 0 50px var(--main-color), 0 0 100px var(--main-color)
+@keyframes float
+    0%
+        transform: translateY(0)
+    100%
+        transform: translateY(50px)
+
+.content-right:hover
+    box-shadow: 0 0 50px var(--roxo-claro), 0 0 100px var(--roxo-claro)
 
 
 @media (0 <= width <= 1220px)
