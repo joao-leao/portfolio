@@ -4,7 +4,7 @@
     </div>
     <div class="skills">
         <div class="skill" *ngFor="let skill of skills">
-            <h5>{{ skill.name}}</h5>
+            <span>{{ skill.name}}</span>
             <img [src]="skill.img" [alt]="skill.descImg">
             <progress [class]="skill.color" [value]="skill.score" max="100"></progress>
         </div>
