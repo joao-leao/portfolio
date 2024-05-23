@@ -1,0 +1,80 @@
+$animation-delay1: 0.2s 
+$animation-increment1: 0.2s 
+$animation-delay2: 0.2s  
+$animation-increment2: 0.2s 
+
+@keyframes fadeInDropDown 
+  from
+    opacity: 0
+    filter: blur(5px)
+    transform: translateY(-70px)
+  
+  to 
+    opacity: 1
+    filter: blur(0)
+    transform: translateY(0)
+  
+.fadeInDropDown
+    opacity: 0
+    animation: fadeInDropDown 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+
+.fadeInDropDown:nth-child(2)
+    animation-delay: .45s
+
+
+@keyframes fadeFromLeft 
+  from 
+    opacity: 0
+    filter: blur(5px)
+    transform: translateX(-100px)
+  
+  to 
+    opacity: 1
+    filter: blur(0)
+    transform: translateX(0)
+  
+.fadeFromLeft 
+    opacity: 0
+    animation: fadeFromLeft 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) .1s forwards
+  
+@for $i from 2 through 8 
+  .fadeFromLeft:nth-child(#{$i}) 
+    animation-delay: $animation-delay1
+  
+  $animation-delay1: $animation-delay1 + $animation-increment1
+
+@keyframes fadeFromRight 
+  from 
+    opacity: 0
+    filter: blur(5px)
+    transform: translateX(100px)
+  
+  to 
+    opacity: 1
+    filter: blur(0)
+    transform: translateX(0)
+  
+.fadeFromRight  
+  opacity: 0
+  animation: fadeFromRight 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) .1s forwards
+
+@keyframes fadeFromTop 
+  from
+    opacity: 0
+    filter: blur(5px)
+    transform: translateY(-100px)
+  
+  to 
+    opacity: 1
+    filter: blur(0)
+    transform: translateY(0)
+  
+.fadeFromTop
+    opacity: 0
+    animation: fadeFromTop 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards
+
+@for $i from 2 through 5 
+  .fadeFromTop:nth-child(#{$i}) 
+    animation-delay: $animation-delay2
+  
+  $animation-delay2: $animation-delay2 + $animation-increment2

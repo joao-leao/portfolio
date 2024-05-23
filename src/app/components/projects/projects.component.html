@@ -1,7 +1,7 @@
 <section class="section-projects" id="projects">
     <h3>Projetos</h3>
     <div class="projects">
-        <div class="project" *ngFor="let project of projects">
+        <div class="project" *ngFor="let project of projects" appScrollAnimator animationClass="fadeFromTop">
             <div class="project-img">
                 <img [src]="project.img" [alt]="project.descImg">
             </div>

@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScrollDirective } from './scroll.directive';
+import { ScrollAnimatorDirective } from './scroll-animator.directive';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ScrollDirective } from './scroll.directive';
     HomeComponent,
     FooterComponent,
     ScrollDirective,
+    ScrollAnimatorDirective,
   ],
   imports: [
     BrowserModule,
