@@ -21,59 +21,29 @@
     margin: 0 100px
     
 .skill
-    width: 250px
-    height:  200px
+    width: 220px
+    height:  180px
     display: flex
     flex-direction: column
     gap: 8px
     justify-content: center
     align-items: center
     background: var(--second-color)
-    box-shadow: 0 0 40px rgb(20, 8, 41)
-   
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.452) 0px 6px 6px, inset rgba(0, 0, 0, 0.555) 0px 10px 20px, inset rgba(0, 0, 0, 0.5) 0px 6px 6px
     border-radius: 10px
+    transition: all ease-in-out 0.3s
+    border: 5px solid #22222277
 
-.skill span
-    font-size: 1.4rem
-    font-weight: 700
-    text-shadow: 0 0 3px black
-    margin: 0
-    
+    &:hover
+        box-shadow: rgba(193, 44, 223, 0.19) 0px 10px 20px, rgba(193, 44, 223, 0.23) 0px 6px 6px, inset rgba(0, 0, 0, 0.19) 0px 10px 20px, inset rgba(0, 0, 0, 0.23) 0px 6px 6px
+        border: 5px solid #b671d6
+
 .skill img
-    width: 4rem
-    height: 4rem
+    width: 5rem
+    height: 5rem
     margin: 10px
-    // filter: drop-shadow(0 0 30px var(--main-color))
-
-.skill progress
-    height: 10px
-    width: 145px
-    border-radius: 10px
-
-.skill progress::-webkit-progress-bar
-    background: var(--main-color)
-    border-radius: 10px
-    
-.skill progress::-webkit-progress-value
-    border-radius: 10px
-
-.skill progress
-    &.orange::-webkit-progress-value
-        background: var(--orange)
-    &.orange-2::-webkit-progress-value
-        background: var(--orange-2)
-    &.blue::-webkit-progress-value
-        background: var(--blue)
-    &.red::-webkit-progress-value
-        background: var(--red)
-    &.yelow::-webkit-progress-value
-        background: var(--yelow)
-    &.black::-webkit-progress-value
-        background: var(--black)
-    &.light-blue::-webkit-progress-value
-        background: var(--light-blue)
-    
-    
+    filter: drop-shadow(0 0 80px var(--main-color))
+      
 @media (0px <= width < 768px) 
     .skills
         margin: 0 2rem
@@ -82,23 +52,12 @@
     .conteiner-title h3
         font-size: 3.2rem 
 
-    .skills
-        margin: 0
-
     .skill
-        width: 210px
-        height: 170px
+        width: 180px
+        height: 140px
         gap: 0
         
-    .skill span
-        font-size: 1rem
-        margin: 0
-    
     .skill img
-        width: 3.4rem
-        height: 3.4rem
+        width: 3.8rem
+        height: 3.8rem
         margin: 8px
-
-    .skill progress
-        height: 8px
-        width: 130px
